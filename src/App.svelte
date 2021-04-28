@@ -1,9 +1,9 @@
 <script>
-	import Countries from './Countries.svelte';
+	import Countries from '../components/Countries.svelte';
 	import { onMount } from 'svelte';
-	import Header from './Header.svelte';
-	import Global from './Global.svelte';
-	import Footer from './Footer.svelte';
+	import Header from '../components/Header.svelte';
+	import Global from '../components/Global.svelte'
+	import Footer from '../components/Footer.svelte';
 
 	const API = "https://api.covid19api.com/summary";
 	let data = {};
@@ -33,8 +33,3 @@
 	<Footer></Footer>
 </div>
 
-<style global>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>

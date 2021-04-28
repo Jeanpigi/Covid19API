@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex justify-center">
-    <div class="bg-gray-300 rounded border-indigo-500 border overflow-hidden shadow-lg text-center text-sm xl:text-xl my-6">
+    <div class="bg-purple-100 rounded border-indigo-500 border overflow-hidden shadow-lg text-center text-sm xl:text-xl my-6">
         <div class="m-4">
             <h3 class="text-xl xl:text-3xl font-bold">{country.Country}</h3>
         </div>
