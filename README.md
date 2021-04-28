@@ -1,3 +1,7 @@
+# Covid19 API
+
+It is a web site which shows all cases about Covid 19 around the world.
+
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
 ---
@@ -91,3 +95,17 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+# Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+# Authors
+
+- **Jean Pierre Giovanni Arenas Ortiz**
+
+# License
+
+[MIT](https://choosealicense.com/licenses/mit/)
