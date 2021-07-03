@@ -3,24 +3,57 @@
   export let countries = [];
 </script>
 
-<div class="mt-4 xl:mx-16 xl:mb-16 text-center">
-    <h1 class="mb-4 xl:mb-10 text-xl md:text-2xl xl:text-3xl ">Ámbito Global:</h1>
-    <div class="text-sm xl:text-xl font-sans grid grid-cols-1 xl:grid-cols-4">
+<div class="global">
+    <h1>Ámbito Global:</h1>
+    <div class="global-card">
       <div>
-        <span class="text-bold">Paises Afectados</span>
+        <span>Paises Afectados</span>
         <h2>{countries.length}</h2>
       </div>
       <div>
-        <span class="text-bold">Casos Confirmados</span>
+        <span>Casos Confirmados</span>
         <h2>{global.TotalConfirmed}</h2>
       </div>
       <div>
-        <span class="text-bold">Casos de recuperación</span>
+        <span>Casos de recuperación</span>
         <h2>{global.TotalRecovered}</h2>
       </div>
       <div>
-        <span class="text-bold">Total de muertes</span>
+        <span>Total de muertes</span>
         <h2>{global.TotalDeaths}</h2>
       </div>
     </div>
 </div>
+
+<style>
+  .global {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .global h1 {
+    font-size: 2.3rem;
+  }
+
+  .global-card {
+    display: grid;
+    gap: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(39, 44, 49, 0.06),
+            -10px 10px 15px rgba(39, 44, 49, 0.03);
+    border-radius: 20px;
+    border: 1px solid var(--third-clr);
+    padding: 1rem;
+
+    transition: transform 500ms ease;
+  }
+
+  .global-card:hover {
+    transform: scale(1.03);
+  }
+</style>

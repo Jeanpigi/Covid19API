@@ -1,6 +1,18 @@
 
-<div class="bg-indigo-500 max-w-full text-white grid grid-cols-3 text-center font-sans items-center">
-    <img class="mr-1" src="logo.png" alt="logo">
-    <h1 class="text-2xl xl:text-5xl">Covid 19</h1>
-    <h2 class="text-lg xl:text-2xl">JBearP</h2>
+<div class="header">
+    <img src="logo.png" alt="logo" width="100px">
+    <h1>Covid 19</h1>
+    <h2>JBearP</h2>
 </div>
+
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: var(--primary-clr);
+        font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+        font-weight: 900;
+    }
+</style>

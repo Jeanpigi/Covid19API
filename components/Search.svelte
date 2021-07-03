@@ -2,11 +2,24 @@
     export let handleSearch;
 </script>
 
-<div class="py-8 px-16">
+<div class="search">
     <input
-        class="bg-white text-sm xl:text-xl text-center focus:outline-none focus:shadow-outline border border-gray-400 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
         type="text"
         placeholder="Buscar al Pais"
         on:keyup={event => handleSearch(event)}
     />
 </div>
+
+<style>
+    .search {
+        margin: 2rem;
+    }
+    .search input {
+        padding: 1rem;
+        width: 100%;
+        border-radius: 4px;
+        border: 2px solid var(--color-four);
+        outline: none;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.1);
+    }
+</style>

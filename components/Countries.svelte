@@ -15,10 +15,23 @@
 
 <Search {handleSearch} />
 
-<div class="mx-8 md:mx-6 xl:mx-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        {#each searchCountries as country}
-            <Country {country} />
-        {/each}
-    </div>
+<div class="countries">
+    {#each searchCountries as country}
+        <Country {country} />
+    {/each}
 </div>
+
+<style>
+    .countries {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: 1023px) {
+    .countries {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+</style>
